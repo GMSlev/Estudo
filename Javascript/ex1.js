@@ -83,4 +83,3 @@ document.write("O custo da gasolina por quilômetro será de R$ " + custoPorKm.t
 pularLinha();
 document.write("Será necessário " + Math.ceil (abastecimentoNecessario) + " tanques para completar a viagem"); // Match.ceil é utilizado para arredondar para cima, enquanto o Math.round retorna apenas o número inteiro (ex: 1,11112 ----> Uso do Math.round--->1)
 pularLinha();
-
