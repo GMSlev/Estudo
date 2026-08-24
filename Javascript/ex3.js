@@ -37,3 +37,4 @@ console.log("Salário bruto com horas extras: R$" + salarioTotal);
 console.log("Total de descontos:R$ " + totalDescontos);
 console.log("Salário líquido: R$" + salarioLiquidoo);
 console.log("Percentual de descontos: " + percentualDescontos.toFixed(2) + "%");
+document.write("<strong style = 'color: red';>A resolução deste exercício se encontra no toggle developer tools!</strong>")
