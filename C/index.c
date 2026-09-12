@@ -316,22 +316,5 @@ int main()
         } while (tentativa > 0);
             printf("Fim do jogo! O número secreto era: %d\n", numeroSecreto);
 
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     
 }
