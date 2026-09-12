@@ -1,3 +1,8 @@
+function casaDec(){
+    toFixed();
+}
+
+
 let nome = "Gabriel";
 let salarioBrutoo = 3500;
 let horasExtrass = 8;
@@ -24,17 +29,19 @@ let percentualDescontos = (totalDescontos /salarioTotal) * 100;
 
 console.log("======ENTRADA DE DADOS=======");
 console.log("Nome: " + nome);
-console.log("Salário bruto: " + salarioBrutoo);
+console.log("Salário bruto: R$"+ salarioBrutoo.toFixed(2));
 console.log("Horas extras: " + horasExtrass);
-console.log("Valor da hora extra: " + valorHoraExtra);
-console.log("Vale Transporte: " + vT);
-console.log("Plano de saúde: " + planoDeSaudee);
+console.log("Valor da hora extra: R$" + valorHoraExtra.toFixed(2));
+console.log("Vale Transporte: R$" + vT.toFixed(2));
+console.log("Plano de saúde: R$" + planoDeSaudee.toFixed(2));
+
 pularLinha();
+
 console.log("======SAÍDA DE DADOS=======");
 console.log("Funcionário: " + nome);
 console.log("Horas extras totais: " + totalHorasExtras + "h");
 console.log("Salário bruto com horas extras: R$" + salarioTotal);
-console.log("Total de descontos:R$ " + totalDescontos);
-console.log("Salário líquido: R$" + salarioLiquidoo);
+console.log("Total de descontos:R$ " + totalDescontos.toF);
+console.log("Salário líquido: R$" + salarioLiquidoo + casaDec);
 console.log("Percentual de descontos: " + percentualDescontos.toFixed(2) + "%");
 document.write("<strong style = 'color: red';>A resolução deste exercício se encontra no toggle developer tools!</strong>")
