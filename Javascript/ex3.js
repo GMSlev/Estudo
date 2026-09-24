@@ -40,8 +40,8 @@ pularLinha();
 console.log("======SAÍDA DE DADOS=======");
 console.log("Funcionário: " + nome);
 console.log("Horas extras totais: " + totalHorasExtras + "h");
-console.log("Salário bruto com horas extras: R$" + salarioTotal);
-console.log("Total de descontos:R$ " + totalDescontos.toF);
-console.log("Salário líquido: R$" + salarioLiquidoo + casaDec);
+console.log("Salário bruto com horas extras: R$" + salarioTotal.toFixed(2));
+console.log("Total de descontos:R$ " + totalDescontos.toFixed(2));
+console.log("Salário líquido: R$" + salarioLiquidoo.toFixed(2));
 console.log("Percentual de descontos: " + percentualDescontos.toFixed(2) + "%");
-document.write("<strong style = 'color: red';>A resolução deste exercício se encontra no toggle developer tools!</strong>")
+document.write("<strong style = 'color: red';>A resolução deste exercício se encontra no console!</strong>")
