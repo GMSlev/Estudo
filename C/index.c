@@ -302,7 +302,7 @@ int main()
         int tentativa = 3;
         int palpite;
 
-        do {
+        do{
             printf("\nDigite seu palpite (1 a 10): ");
             scanf("%d", &palpite);
 
@@ -313,8 +313,27 @@ int main()
                 printf("Número incorreto! Tente novamente.\n");
                 tentativa--;
             }
-        } while (tentativa > 0);
+        }while (tentativa > 0);
             printf("Fim do jogo! O número secreto era: %d\n", numeroSecreto);
-
+        
     
+            
+            /*Exercício 8: Calcular IMC
+            Crie uma função que faça o calculo IMC com valores que foram inseridos para obter o resultado.
+            */
+
+           float calcularIMC(float peso, float altura){
+               float operacao = (altura * altura) / peso;
+               return operacao;
+            }
+            
+            int main(){
+                printf("Informe seu peso: ");
+                scanf("%f", &peso);
+
+                printf("Informa a sua altura: ");
+                scanf("%f", &altura);
+
+                printf("Seu IMC é: %.2f", calcularIMC(peso, altura));
+            }
 }
