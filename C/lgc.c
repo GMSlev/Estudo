@@ -92,3 +92,59 @@ int main(){
     int baixoEstoque = verificarBaixoEstoque(estoque, tam, 10);
     printf("O número de produtos com estoque abaixo do limite é: %d\n", baixoEstoque);
 }
+
+
+/*
+Questão 03 — Análise de Desempenho de Atletas Maior/Menor Valor
+    Em uma competição de natação, os tempos de um atleta em 6 voltas são anotados em um vetor de números
+    reais. O treinador deseja eliminar o pior e o melhor tempo para calcular a constância do atleta.
+Requisitos do Programa:
+Crie a função float obterMaiorTempo(float tempos[], int tam) que identifique o tempo mais lento.
+Crie a função float obterMenorTempo(float tempos[], int tam) que retorne o tempo mais rápido.
+No programa principal, leia os tempos e exiba a amplitude entre o melhor e o pior tempo (diferença entre maior e
+menor)*/
+
+float obterMaiorTempo( float tempos[], int tam){
+
+    float maior = tempos[0];
+    for(int i = 0; i < tam; i++){
+        if(maior < tempos[i]){
+            maior = tempos[i];
+        }
+
+    }
+    return maior;
+}
+
+float obterMenorTempo(float tempos[], int tam){
+
+    float menor = tempos[0];
+    for (int i = 0; i < tam; i++){
+        if(menor > tempos[0]){
+            menor = tempos[i];
+        }
+    }
+    return menor;
+    
+}
+
+int main(){
+    float tempos[6];
+    int tam = 6;
+
+
+    for(int i = 0; i < tam; i++){
+        printf("Tempo de volta: %d", i +1);
+        sacnf("%f", tempos[i]);
+    }
+
+    float maiorTempo = obterMaiorTempo(tempos, tam);
+    float menorTempo = obterMenorTempo(tempos, tam);
+
+    printf("Pior tempo: %.2f\n", maiorTempo);
+    printf("Melhor tempo: %.2f\n", menorTempo);
+    printf("Amplitude: %.2f", maiorTempo - menorTempo);
+
+    return 0;
+
+}
